@@ -1,0 +1,10 @@
+# CPU high-frequency order-book / queue simulation, not an A-share L2 data
+# license or a colocation execution deployment. Rust wheels require glibc2.28+.
+hftbacktest[databento]>=2.4.4,<3
+numpy>=2,<2.3
+numba>=0.61,<0.62
+polars>=1.20,<2
+holoviews>=1.20,<2
+ipykernel>=6.29
+setuptools>=75
+wheel>=0.45

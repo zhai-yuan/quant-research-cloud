@@ -1,0 +1,18 @@
+# TensorFlow/Keras CPU experiments are isolated from PyTorch and finance ABI.
+# tensorflow without [and-cuda] is upstream's CPU installation. Use one
+# tensorflow distribution: tf-keras depends on it, so tensorflow-cpu plus
+# tf-keras would install two distributions over the same tensorflow namespace.
+# TFP 0.25 is tested against TF 2.18 and explicitly requires legacy tf-keras.
+tensorflow>=2.18,<2.19
+keras>=3.8,<4
+numpy>=1.26,<3
+pandas>=2.2,<3
+scikit-learn>=1.6,<2
+tensorboard>=2.18,<2.19
+tensorflow-probability>=0.25,<0.26
+tf-keras>=2.18,<2.19
+optuna>=4,<5
+ipykernel>=6.29
+matplotlib>=3.9,<4
+setuptools>=75
+wheel>=0.45

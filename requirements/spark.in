@@ -1,0 +1,11 @@
+# Spark 4.x needs Java 17+ (installed by scripts/system.sh); local mode is
+# available, distributed workers / cluster services are separately provisioned.
+pyspark[sql,ml,mllib,connect]>=4,<5
+numpy>=1.26,<3
+pandas>=2.2,<3
+pyarrow>=18
+fugue[sql]>=0.9,<1
+delta-spark>=4,<5
+ipykernel>=6.29
+setuptools>=75
+wheel>=0.45

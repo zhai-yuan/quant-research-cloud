@@ -1,0 +1,18 @@
+id: replace-with-preregistered-research-id
+status: hypothesis
+universe: A-share stocks with point-in-time board, listing, ST and suspension metadata
+hypothesis: Write an economic mechanism and a falsifiable prediction before testing
+data:
+  provenance: Record provider, license, retrieval time, hashes and vintage
+  prices: Use executable raw prices for accounting; handle corporate actions explicitly
+  features: Record publication timestamps and reporting lags for every input
+  universe: Include historical listings, delistings and status changes
+evaluation:
+  primary_metric: Specify before inspecting holdout results
+  split: Chronological train/validation/final holdout, or properly nested walk-forward
+  costs: Broker-specific commission minimum, transfer fees, sell taxes, slippage and impact
+  checks: Future leakage, survivorship, multiple testing, turnover, capacity and regime stability
+  acceptance: Specify minimum sample size and robustness thresholds before testing
+paper:
+  mode: local-paper
+  promotion: Reconcile live data availability, fills, fees and risk controls with an approved broker simulator before any live integration

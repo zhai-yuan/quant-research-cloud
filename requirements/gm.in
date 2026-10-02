@@ -1,0 +1,13 @@
+# MyQuant / 掘金 Linux x86_64 SDK. Python 3.10 override is needed for gmtrade's
+# last published Linux wheel. pandas1 / protobuf3 are incompatible with main.
+# Tokens / authorized hosted services
+# remain external. Installing this profile never places live orders.
+gm[scipy]>=3.0.187,<4
+gmtrade==3.0.6
+numpy>=1.26,<2
+pandas>=1.5,<2
+protobuf>=3.20,<4
+matplotlib>=3.9,<4
+ipykernel>=6.29
+setuptools>=75
+wheel>=0.45

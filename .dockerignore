@@ -1,0 +1,15 @@
+.git
+.venv
+.venvs
+.tools
+.cache
+.env
+.env.*
+secrets
+credentials
+data
+artifacts
+logs
+__pycache__
+*.sqlite*
+*.db

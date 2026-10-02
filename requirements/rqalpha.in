@@ -1,0 +1,14 @@
+# RQAlpha event-driven China equities/ETF/futures research; bundle and data
+# authorization are independent of installing the research engine.
+rqalpha>=6.4,<7
+rqdatac>=3
+numpy>=1.26,<2
+pandas>=2.2,<3
+akshare>=1.16
+baostock>=0.8.9
+tushare>=1.4
+alphalens-reloaded>=0.4.5
+quantstats>=0.0.64,<0.1
+ipykernel>=6.29
+setuptools>=75
+wheel>=0.45

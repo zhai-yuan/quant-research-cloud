@@ -1,0 +1,18 @@
+# Bayesian hypotheses, hierarchical models, regimes and sensitivity analysis.
+# Modern NumPy/JAX/PyTensor are isolated from the NumPy 1 finance environment.
+numpy>=2,<3
+pandas>=2.2,<4
+scipy>=1.13,<2
+pymc>=5,<6
+arviz>=0.21,<1
+numpyro>=0.17,<1
+jax[cpu]>=0.5,<1
+dynesty>=2.1,<4
+hmmlearn>=0.3,<1
+copulas>=0.12,<1
+deap>=1.4,<2
+SALib>=1.5,<2
+ipykernel>=6.29
+matplotlib>=3.9,<4
+setuptools>=75
+wheel>=0.45

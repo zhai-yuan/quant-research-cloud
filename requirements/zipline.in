@@ -1,0 +1,13 @@
+# Separate bundle ingestion / event backtesting environment; A-share bundles
+# and price-limit / suspension / T+1 rules still require explicit adaptation.
+zipline-reloaded>=3.1.1,<4
+numpy>=1.26,<2
+pandas>=2.2,<3
+exchange-calendars>=4.6,<5
+alphalens-reloaded>=0.4.5
+empyrical-reloaded>=0.5.10
+pyfolio-reloaded>=0.9
+ipykernel>=6.29
+matplotlib>=3.9,<4
+setuptools>=75
+wheel>=0.45

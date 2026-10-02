@@ -1,0 +1,9 @@
+# Python 3.12 override in profiles.json is required by the current stable API.
+# Native Linux wheels require glibc >=2.35; this profile does not install a
+# live gateway or implement A-share order semantics.
+nautilus-trader[ib,visualization]>=1.231,<2
+numpy>=2,<3
+pandas>=2.3,<4
+ipykernel>=6.29
+setuptools>=75
+wheel>=0.45

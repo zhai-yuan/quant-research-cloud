@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-02",
+  "target": "Linux x86_64",
+  "main_python": "3.11.17",
+  "minimal_workflow_tests_passed": 29,
+  "main_workflow_tests_passed": 29,
+  "main_declared_distributions": 138,
+  "main_locked_third_party_distributions": 464,
+  "main_installed_and_import_checked": true,
+  "extension_profiles_install_verified": false,
+  "extension_profiles": [
+    "bayesian",
+    "gm",
+    "hft",
+    "nautilus",
+    "qlib",
+    "rqalpha",
+    "spark",
+    "tensorflow",
+    "torch-ml",
+    "vnpy",
+    "zipline"
+  ],
+  "locks": {
+    "bayesian": {
+      "python": "3.11",
+      "input_sha256": "d9469aa58d89903c0f70fa4e71e8e4d6e4b3b2bba1fb95f27b040c26edee402e",
+      "lock_sha256": "1abd0638b7429dc65a02c1b4712f74924fab68bd4159ad6a8fce20a05f91095a",
+      "packages": 83
+    },
+    "gm": {
+      "python": "3.10",
+      "input_sha256": "d3b71bcae690d7c24e2e7b7695eee2e7876a03c895848394f28ecbd3bdeed90e",
+      "lock_sha256": "18a84d771b15abf1827d18c7af084e8af4d5dfe75a97009881025823024dd566",
+      "packages": 53
+    },
+    "hft": {
+      "python": "3.11",
+      "input_sha256": "5b3493a0427fd65ed3c5bfd19bf080f7bf9b82853079257719befd8a59a3bbeb",
+      "lock_sha256": "55ad831ffa81703034b74c0acc867b10a771f0306de1d9e1616382429a26debc",
+      "packages": 81
+    },
+    "main": {
+      "python": "3.11",
+      "input_sha256": "234b183636d071c57ce31282f2c93497e8cab51d10b4694a4eb8efd656006aa3",
+      "lock_sha256": "d61d4ef6f0aa29060c26396a904e8d4fa4c8a507644a5f0d83ae0402ee11ee5d",
+      "packages": 464
+    },
+    "minimal": {
+      "python": "3.11",
+      "input_sha256": "17cd285effa2bfe70e0d0f1f82017931b5c1deef3770996eeeee2c6546a04ac2",
+      "lock_sha256": "5942b690d71eb045cab24e9d703cfa5d5c08cfebc79a82b18f56e36ad51117e9",
+      "packages": 22
+    },
+    "nautilus": {
+      "python": "3.12",
+      "input_sha256": "3898f8501efb218bde52599d1f0d56962d7b8de41396bde9672da1e255fbf3b0",
+      "lock_sha256": "da87402cb2e2a87982412d6d02d75386f8da997b14f43637387505abc15637d7",
+      "packages": 54
+    },
+    "qlib": {
+      "python": "3.11",
+      "input_sha256": "1f18442dcfbe811fcc95d61848b737c87559c7981b2af614786935812a2cd8d2",
+      "lock_sha256": "a6c6b007e38f13a301a2675c5cd1d7d9a9244b83b8980d20908902a0ecf7100f",
+      "packages": 241
+    },
+    "rqalpha": {
+      "python": "3.11",
+      "input_sha256": "0d129a2b445a9135dc0c27e9c296fe040225584e30bc14cefa5aca341309b244",
+      "lock_sha256": "260844a1f1f1540970e07a6e6a1007133fb87a93c959e4fd1014ff91cf72f4b0",
+      "packages": 104
+    },
+    "spark": {
+      "python": "3.11",
+      "input_sha256": "0b872385a186840ece767b45fc1057c88f90d365eb633f299d5c743226b02f6c",
+      "lock_sha256": "dbcef19f1177df6a448c265eb37d3904b008916f2e79359a9b6a557f06f1f6b0",
+      "packages": 56
+    },
+    "tensorflow": {
+      "python": "3.11",
+      "input_sha256": "1e179ed94357904d10e465e11c45ccda7ca0ad63f5d8a662ba095d5450b96d0e",
+      "lock_sha256": "cda65b5b7b9c28fd69a556161dae9a67d859ef4328f02245458d1dc2012a9bec",
+      "packages": 91
+    },
+    "torch-ml": {
+      "python": "3.11",
+      "input_sha256": "7269ea7944e229381460d3a23f10954e181f8f27b78ed6f07ac115e1ec6b77c6",
+      "lock_sha256": "7bc66486218120ea3124d1a9032a017523c27a9b4e29d35e6695a1ee06bd06b7",
+      "packages": 232
+    },
+    "vnpy": {
+      "python": "3.11",
+      "input_sha256": "2cbb48da6ea9c0423d782dc6d8d29a87de385cf67d499749af0cfb1d93f6241d",
+      "lock_sha256": "405c6b3e061f6a59a754e36aa16e2dc747f568b80933fafe17fa222cb69864ac",
+      "packages": 134
+    },
+    "zipline": {
+      "python": "3.11",
+      "input_sha256": "6d586a41a8d9cd80a337b54e6560e18fb15c9db55261954670aaf6255af6991b",
+      "lock_sha256": "a436a79394be480165f0faaa7da8aaf48735acfb43432f0f4ebabe8fea2c02de",
+      "packages": 103
+    }
+  },
+  "startup_checks": {
+    "complete_main": true,
+    "incomplete_rejected": true,
+    "missing_extension_rejected": true
+  },
+  "browser_launch_verified": false,
+  "docker_build_verified": false,
+  "native_system_install_executed": false,
+  "github_upload_verified": false,
+  "github_last_error": "403 Resource not accessible by integration",
+  "codex_cloud_environment_published": false,
+  "real_data_or_broker_account_connected": false,
+  "external_orders_sent": 0
+}

@@ -1,0 +1,21 @@
+# VeighNa 4.x requires NumPy 2 and Qt, so it has a separate environment.
+# Qt libraries can run headless; a graphical desktop is not provided by Cloud.
+# Paper account and data adapters are included. Native broker gateways such as
+# CTP, XTP and Windows-only MiniQMT are external deployment integrations.
+vnpy[alpha]>=4.4,<5
+vnpy-ctastrategy>=1.4,<2
+vnpy-ctabacktester>=1.3,<2
+vnpy-portfoliostrategy>=1.3,<2
+vnpy-algotrading>=1.1,<2
+vnpy-datarecorder>=1.1,<2
+vnpy-sqlite>=1.1,<2
+vnpy-rqdata>=3.4,<4
+vnpy-tushare>=1.4,<2
+vnpy-paperaccount>=1,<2
+vnpy-binance>=2026.8.5
+numpy>=2.2.3,<3
+pandas>=2.2.3,<3
+torch>=2.6,<3
+ipykernel>=6.29
+setuptools>=75
+wheel>=0.45

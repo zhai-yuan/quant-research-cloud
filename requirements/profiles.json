@@ -1,0 +1,54 @@
+{
+  "main": {
+    "python": "3.11",
+    "purpose": "A-share data, factors, statistics, optimization, general backtests and research tools"
+  },
+  "minimal": {
+    "python": "3.11",
+    "purpose": "Offline demonstration and tests only"
+  },
+  "torch-ml": {
+    "python": "3.11",
+    "purpose": "CPU deep learning, NLP, RL, time-series forecasting"
+  },
+  "tensorflow": {
+    "python": "3.11",
+    "purpose": "TensorFlow/Keras"
+  },
+  "qlib": {
+    "python": "3.11",
+    "purpose": "Qlib factor research and ML workflows"
+  },
+  "rqalpha": {
+    "python": "3.11",
+    "purpose": "A-share event-driven backtesting"
+  },
+  "nautilus": {
+    "python": "3.12",
+    "purpose": "Nautilus Trader event and execution simulation"
+  },
+  "zipline": {
+    "python": "3.11",
+    "purpose": "Zipline Reloaded"
+  },
+  "vnpy": {
+    "python": "3.11",
+    "purpose": "VeighNa framework and paper-account toolkit"
+  },
+  "spark": {
+    "python": "3.11",
+    "purpose": "Local PySpark; Java17 required"
+  },
+  "hft": {
+    "python": "3.11",
+    "purpose": "HftBacktest order-book research"
+  },
+  "gm": {
+    "python": "3.10",
+    "purpose": "MyQuant SDK and separately entitled gmtrade simulation SDK"
+  },
+  "bayesian": {
+    "python": "3.11",
+    "purpose": "Bayesian hypotheses, hierarchical modeling, regime and sensitivity analysis"
+  }
+}

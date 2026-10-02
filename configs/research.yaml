@@ -1,0 +1,20 @@
+# Illustrative offline assumptions. These are not a statement of current
+# exchange rules, taxes, brokerage fees or broker-specific account support.
+timezone: Asia/Shanghai
+execution_mode: local-paper
+account:
+  initial_cash: 1000000.0
+market:
+  round_lot: 100
+  settlement: T+1
+  fill_model: conservative_open
+fees:
+  brokerage_rate: 0.0003
+  minimum_brokerage: 5.0
+  sell_stamp_rate: 0.0005
+  transfer_rate: 0.00001
+  slippage_bps: 0.0
+research:
+  lookbacks: [10, 20, 40]
+  top_k: 3
+  train_fraction: 0.65
