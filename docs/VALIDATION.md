@@ -1,6 +1,6 @@
 # 交付验证记录
 
-检查日期：2026-10-02。此记录描述本地准备与验证，不代表 GitHub 上传或 Codex Cloud 发布完成。
+检查日期：2026-10-02。此记录描述本地准备、验证与已核实的 GitHub 源码上传；Codex Cloud 环境尚未创建或发布。
 
 | 项目 | 结果 |
 | --- | --- |
@@ -13,7 +13,8 @@
 | Chromium | Python 客户端已安装；本地没有安装浏览器或执行启动验证。默认完整安装会安装依赖并检查浏览器启动 |
 | Docker | Dockerfile 已检查并修复浏览器原生依赖路径；本机 Docker/WSL 集成不可用，未执行镜像构建 |
 | 真实数据/券商 | 未连接实际数据账户、L2 订阅或券商模拟账户；未发送任何外部订单 |
-| GitHub | 目标公开仓库已存在；当前连接实际写入返回 403，尚未成功上传 |
+| GitHub | 经用户浏览器授权 GitHub CLI，Windows Git 成功推送至公开仓库 [zhai-yuan/quant-research-cloud](https://github.com/zhai-yuan/quant-research-cloud) 的 `main`；已核实 [源码提交 d607d9d](https://github.com/zhai-yuan/quant-research-cloud/commit/d607d9d3741bb83edbdb206bdd3c92e92084a994) 的 64 个源码文件、13 个锁文件及必需文件 |
+| GitHub CI | 源码提交的自动离线工作流 [已通过](https://github.com/zhai-yuan/quant-research-cloud/actions/runs/37005745928)；完整环境的手动安装工作流尚未执行 |
 | Codex Cloud | 未创建或发布实际 Cloud 环境；仓库安装说明与测试入口已准备 |
 
 本地主要验证命令：

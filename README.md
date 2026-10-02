@@ -2,7 +2,7 @@
 
 面向 A 股的 Python 量化研究起点：将假设记录、时间顺序验证、含交易约束的回测和本地模拟账本接成可运行的离线流程，并提供 Codex Cloud 安装脚本。示例使用合成行情，用来检查工程流程；收益数字不代表真实市场表现。
 
-当前交付是可上传 GitHub 的源码和环境配置。GitHub 仓库的创建、推送以及 Codex Cloud 环境的发布，需要实际完成对应操作；保存这些文件不会自动完成它们。操作步骤见 [Cloud 配置](docs/CLOUD_SETUP.md)。
+源码和环境配置已上传至公开仓库 [zhai-yuan/quant-research-cloud](https://github.com/zhai-yuan/quant-research-cloud) 的 `main` 分支，已核实 [源码提交 d607d9d](https://github.com/zhai-yuan/quant-research-cloud/commit/d607d9d3741bb83edbdb206bdd3c92e92084a994)。Codex Cloud 环境尚未创建或发布；接下来的设置步骤见 [Cloud 配置](docs/CLOUD_SETUP.md)。
 
 ## 已配置的研究工具
 
@@ -64,6 +64,6 @@ bash scripts/run.sh paper \
 
 ## 放入 Codex Cloud
 
-将依赖清单、源码和脚本推送到 GitHub 后，创建 Cloud 环境并让 Codex 执行 `bash scripts/setup.sh`，验证离线演示与测试，再发布环境。仓库文件描述如何安装，依赖实际安装在 Cloud 的运行环境中。[OpenAI 官方 Cloud 文档](https://learn.chatgpt.com/docs/environments/cloud-environments)
+依赖清单、源码和脚本已在 GitHub 仓库中。创建 Cloud 环境并让 Codex 执行 `bash scripts/setup.sh`，验证离线演示与测试，再发布环境。仓库文件描述如何安装，依赖实际安装在 Cloud 的运行环境中。[OpenAI 官方 Cloud 文档](https://learn.chatgpt.com/docs/environments/cloud-environments)
 
 本项目交付研究与模拟流程的工程起点，未提供经过真实数据验证的完整生产策略。持续模拟需要维护独立的存储、调度和服务生命周期；Cloud 对话中的一次运行不能证明这些服务已部署。

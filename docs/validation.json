@@ -109,9 +109,21 @@
   "browser_launch_verified": false,
   "docker_build_verified": false,
   "native_system_install_executed": false,
-  "github_upload_verified": false,
-  "github_last_error": "403 Resource not accessible by integration",
+  "github_upload_verified": true,
+  "github_last_error": null,
+  "github_repository": "https://github.com/zhai-yuan/quant-research-cloud",
+  "github_branch": "main",
+  "github_verified_code_commit": "d607d9d3741bb83edbdb206bdd3c92e92084a994",
+  "github_verified_code_commit_url": "https://github.com/zhai-yuan/quant-research-cloud/commit/d607d9d3741bb83edbdb206bdd3c92e92084a994",
+  "github_auth_method": "GitHub CLI browser OAuth",
   "codex_cloud_environment_published": false,
   "real_data_or_broker_account_connected": false,
-  "external_orders_sent": 0
+  "external_orders_sent": 0,
+  "github_ci": {
+    "verified_code_commit": "d607d9d3741bb83edbdb206bdd3c92e92084a994",
+    "status": "completed",
+    "conclusion": "success",
+    "run_url": "https://github.com/zhai-yuan/quant-research-cloud/actions/runs/37005745928",
+    "scope": "Automatic offline-workflow CI; complete-environment workflow_dispatch installation not executed"
+  }
 }

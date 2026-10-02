@@ -4,11 +4,11 @@
 
 ## GitHub 访问与上传
 
-目标仓库为 [zhai-yuan/quant-research-cloud](https://github.com/zhai-yuan/quant-research-cloud)，由用户创建。2026-10-02 的直接元数据检查确认它是公开仓库，元数据的 `push` 字段为 true。但实际 Contents API 写入返回 403 `Resource not accessible by integration`，说明仓库元数据不能证明当前 GitHub App 的写入授权已经生效。交付时的实际远程状态以 [验证记录](VALIDATION.md) 为准；上传完成须核实远程文件和提交记录。
+目标公开仓库为 [zhai-yuan/quant-research-cloud](https://github.com/zhai-yuan/quant-research-cloud)，由用户创建。2026-10-02 已通过用户浏览器授权 GitHub CLI，再使用 Windows Git 推送至 `main`；已核实 [源码提交 d607d9d](https://github.com/zhai-yuan/quant-research-cloud/commit/d607d9d3741bb83edbdb206bdd3c92e92084a994) 的 64 个源码文件和 13 个锁文件。实际验证范围见 [验证记录](VALIDATION.md)。此前 GitHub App 的 Contents API 写入返回 403 `Resource not accessible by integration`；这次独立的 GitHub CLI 授权与上传成功不表示插件写入权限已修复。
 
-上传时将交付目录作为仓库根目录；远程应包含 `pyproject.toml`、`requirements/`、`scripts/`、`src/`、`tests/`、`configs/` 和 `docs/`。可使用已授权的 GitHub 连接写入；本地发布脚本 `bash scripts/publish_github.sh` 是另一个入口，需要它提示的 Git/GitHub CLI 认证条件。无需把 Token 发到聊天里或写入仓库。
+已上传的交付目录作为仓库根目录，远程包含 `pyproject.toml`、`requirements/`、`scripts/`、`src/`、`tests/`、`configs/` 和 `docs/`。无需把 Token 发到聊天里或写入仓库。
 
-使用 GitHub CLI 上传时，先通过 `gh auth login --hostname github.com --git-protocol https --scopes workflow` 完成浏览器登录，再运行 `bash scripts/publish_github.sh zhai-yuan/quant-research-cloud`。workflow 权限用于提交仓库内的 CI 文件；脚本拒绝覆盖已有远程提交。
+`scripts/publish_github.sh` 保留为空仓库首次发布入口，依赖 Git/GitHub CLI 的认证条件，并拒绝覆盖已有远程提交。本次目标仓库已经完成首次上传，后续源码变更应正常提交并推送。
 
 仓库保存依赖清单、锁定版本和安装脚本。当前仓库为公开仓库，上传前应确认提交范围只含源码；`.venv/`、`.venvs/`、原始商业行情、账户密钥及运行账本不应作为源码提交。之后在 Codex Cloud 仓库选择器中确认能够选中目标仓库。
 
